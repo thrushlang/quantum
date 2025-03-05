@@ -12,7 +12,7 @@ There are plans to enable **quantum programming support** for the Thrush Program
 
 # > We have problems.
 
-The infrastructure of **LLVM** and **MLIR** is not yet stable enough to generate intermediate code for quantum computers. So we have to resort to other methods.
+The infrastructure of **[LLVM](https://llvm.org/)** and **[MLIR](https://mlir.llvm.org/)** is not yet stable enough to generate intermediate code for quantum computers. So we have to resort to other methods.
 
 In addition to this, although there are dialects and infrastructures to generate quantum code, they are very complex and not available in Rust, in a conventional way, through some type of constructor or bridge.
 
