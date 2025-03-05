@@ -24,7 +24,7 @@ By creating a compiler, you could port your thrush programming language code to 
 
 The quantum compiler for the thrush programming language would be **thrushqua**. This would be responsible for transferring the thrush programming language code into Q# code so that it can then be compiled.
 
-`thrushqua --compile tests/test.th`
+`thrushqua --compile test.th`
 
 <p align="center">
   <img src= "https://github.com/thrushlang/quantum/blob/master/assets/Quantum%20Compiler.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
