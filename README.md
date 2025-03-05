@@ -18,7 +18,7 @@ In addition to this, although there are dialects and infrastructures to generate
 
 # > Q# is the solution.
 
-Q# is a quantum programming language created by **Microsoft**. 
+**[Q#](https://github.com/microsoft/qsharp)** is a quantum programming language created by **Microsoft**. 
 
 By creating a compiler, you could port your thrush programming language code to Q#. Q# can then compile it excellently into code for quantum computers.
 
