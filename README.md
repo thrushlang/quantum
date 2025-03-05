@@ -26,6 +26,10 @@ The quantum compiler for the thrush programming language would be **thrushqua**.
 
 `thrushqua --compile tests/test.th`
 
+<p align="center">
+  <img src= "https://github.com/thrushlang/QuantumProgramming/blob/master/assets/Quantum%20Compiler.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
+</p>
+
 ------------
 
 Although this is a **superficial introduction**, it is the very future idea of ​​implementing support for quantum programming by Thrush Programming Language, opening a new era in programming languages.
