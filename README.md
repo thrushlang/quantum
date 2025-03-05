@@ -1,3 +1,7 @@
+<p align="center">
+  <img src= "https://github.com/thrushlang/QuantumProgramming/blob/master/assets/thrush.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
+</p>
+
 # Quantum programming
 
 There are plans to enable **quantum programming support** for the Thrush Programming Language. Here we explain how we could implement it.
