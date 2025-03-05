@@ -1,5 +1,5 @@
 <p align="center">
-  <img src= "https://github.com/thrushlang/QuantumProgramming/blob/master/assets/thrush.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
+  <img src= "https://github.com/thrushlang/Quantum/blob/master/assets/thrush.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
 </p>
 
 # Quantum programming
@@ -27,7 +27,7 @@ The quantum compiler for the thrush programming language would be **thrushqua**.
 `thrushqua --compile tests/test.th`
 
 <p align="center">
-  <img src= "https://github.com/thrushlang/QuantumProgramming/blob/master/assets/Quantum%20Compiler.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
+  <img src= "https://github.com/thrushlang/Quantum/blob/master/assets/Quantum%20Compiler.png" alt= "logo" style= "width: 2hv; height: 2hv;"> </img>
 </p>
 
 ------------
