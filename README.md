@@ -6,7 +6,7 @@
 
 There are plans to enable **quantum programming support** for the Thrush Programming Language. Here we explain how we could implement it.
 
-# > ¿What is Quantuam Programming?
+# > ¿What is Quantum Programming?
 
 **Quantum programming** is the development of software for quantum computers, which use principles of quantum mechanics, such as superposition and entanglement, to perform calculations. Unlike classical bits (0 or 1), qubits in quantum computing can be in multiple states simultaneously, allowing certain problems, such as factoring large numbers or simulating molecules, to be solved more efficiently than traditional computers.
 
