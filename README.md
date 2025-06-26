@@ -22,9 +22,17 @@ In addition to this, although there are dialects and infrastructures to generate
 
 By creating a compiler, you could port your thrush programming language code to Q#. Q# can then compile it excellently into code for quantum computers.
 
-The quantum compiler for the thrush programming language would be **thrushqua**. This would be responsible for transferring the thrush programming language code into Q# code so that it can then be compiled.
+The quantum compiler for the thrush programming language would be **thrushqc**. This would be responsible for transferring the thrush programming language code into Q# code so that it can then be compiled.
 
-`thrushqua --emulate test.th`
+`thrushqc test.th`
+
+# > QIR is the other solution.
+
+**[QIR](https://qir-alliance.org/)** is an intermediary representation on top of LLVM IR, which can be executed by quantum backends such as those from Rigetti and IBM or even Azure.
+
+This intermediate representation is very similar to LLVM IR, so I can directly use the LLVM C infrastructure around it and generate the intrinsics that emulate the behavior of quantum programming.
+
+The process is repeated, and a compiler is created that outputs this portable IR format to be used in quantum executors.
 
 ------------
 
