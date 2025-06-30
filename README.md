@@ -18,11 +18,12 @@ In addition to this, although there are dialects and infrastructures to generate
 
 # > Q# is the solution.
 
-**[Q#](https://github.com/microsoft/qsharp)** is a quantum programming language created by **Microsoft**. 
+**[Q#](https://github.com/microsoft/qsharp)** is a quantum programming language created by **Microsoft**.
 
-By creating a compiler, you could port your thrush programming language code to Q#. Q# can then compile it excellently into code for quantum computers.
+This language has a compilation to multiple intermediate representations, which can be taken by IBM quantum compilers, Rigetti or Quantinuum, and translated into instructions valid for quantum computers.
+Using this language in a manner that allows Thrush to be ported to it would be beneficial to add support for Thrush in this area of computing.
 
-The quantum compiler for the thrush programming language would be **thrushqc**. This would be responsible for transferring the thrush programming language code into Q# code so that it can then be compiled.
+The quantum compiler for the Thrush programming language would be **thrushqc**. This would be responsible for transferring the Thrush programming language code into Q# code so that it can then be compiled.
 
 `thrushqc test.th`
 
@@ -30,9 +31,12 @@ The quantum compiler for the thrush programming language would be **thrushqc**. 
 
 **[QIR](https://qir-alliance.org/)** is an intermediary representation on top of LLVM IR, which can be executed by quantum backends such as those from Rigetti and IBM or even Azure.
 
-This intermediate representation is very similar to LLVM IR, so I can directly use the LLVM C infrastructure around it and generate the intrinsics that emulate the behavior of quantum programming.
+This intermediate representation is used by Microsoft's current Q# to compile and emulate quantum code. This QIR is simply an LLVM IR, providing support for linking to runtime functions that emulate the operation of a quantum component.
+It can also be taken and run on IBM, Rigetti, Azure, and Quantinuum executors.
 
-The process is repeated, and a compiler is created that outputs this portable IR format to be used in quantum executors.
+The same LLVM-C API can be utilized to create this specialized IR and dispatch it at compile time for users to employ in any executor that supports QIR.
+
+It can also be executed by embedding the QIR compiler, unpacking it during the main compiler installation, and utilizing it to emulate the runtime.
 
 ------------
 
