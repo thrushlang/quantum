@@ -31,7 +31,9 @@ The quantum compiler for the Thrush programming language would be **thrushqc**. 
 
 **[QIR](https://qir-alliance.org/)** is an intermediary representation on top of LLVM IR, which can be executed by quantum backends such as those from Rigetti and IBM or even Azure.
 
-This intermediate representation is used by Microsoft's current Q# to compile and emulate quantum code. This QIR is simply an LLVM IR, providing support for linking to runtime functions that emulate the operation of a quantum component.
+This intermediate representation is used by Microsoft's current Q# to compile and emulate quantum code. 
+
+This QIR is simply an LLVM IR, providing support for linking to runtime functions that emulate the operation of a quantum component.
 It can also be taken and run on IBM, Rigetti, Azure, and Quantinuum executors.
 
 The same LLVM-C API can be utilized to create this specialized IR and dispatch it at compile time for users to employ in any executor that supports QIR.
